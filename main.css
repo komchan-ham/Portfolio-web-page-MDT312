@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  section {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 768px)
+  {
+    .grid-container {
+      display: grid;
+      grid-template-columns:auto;
+      grid-gap: 10px;
+    }
+    
+    .grid-container > div{
+      border: 1px solid black;
+      font-size: 40px;
+      text-align: center;
+      background-color:antiquewhite
+    }
+    
+    #header{
+      grid-column:1 / span 3;
+    }
+  
+    #menu{
+      grid-column:1 / span 2;
+    }
+    
+    #main{
+      grid-column: 3 / span 1;
+    }
+    
+    #right{
+      grid-column: 1 / span 3;
+    }
+    
+    #footer{
+      grid-column: 1 / span 3;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 480px) 
+  {
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-gap: 10px;
+    }
+    
+    .grid-container > div{
+      border: 1px solid black;
+      font-size: 40px;
+      text-align: center;
+      background-color:antiquewhite
+    }
+    
+    #header{
+      grid-column:1 / span 1;
+    }
+  
+    #menu{
+      grid-column:1 / span 1;
+    }
+    
+    #main{
+      grid-column: 1 / span 1;
+    }
+    
+    #right{
+      grid-column: 1 / span 1;
+    }
+    
+    #footer{
+      grid-column: 1 / span 1;
+    }
+    
+  }
+  
+#c2
+{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 15%;
+   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+#c1
+{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 30%;
+   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#c3
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  color: aliceblue;
+}
